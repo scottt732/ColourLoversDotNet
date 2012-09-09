@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{146B74D0-42D1-48A4-A334-8A1170E52E46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ColourLovers</RootNamespace>
+    <AssemblyName>ColourLovers</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\net40\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\net40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColourLoversRepository.cs" />
+    <Compile Include="Contract\IColorsRepository.cs" />
+    <Compile Include="Contract\ILoversRepository.cs" />
+    <Compile Include="Contract\IPalettesRepository.cs" />
+    <Compile Include="Contract\IPatternsRepository.cs" />
+    <Compile Include="Contract\IStatsRepository.cs" />
+    <Compile Include="Enum\Hue.cs" />
+    <Compile Include="Enum\SortColumn.cs" />
+    <Compile Include="Enum\SortOrder.cs" />
+    <Compile Include="Model\Color\Color.cs" />
+    <Compile Include="Model\Color\ColorCollection.cs" />
+    <Compile Include="Model\Color\HueSaturationValue.cs" />
+    <Compile Include="Model\Color\RedGreenBlue.cs" />
+    <Compile Include="Model\Lover\Comment.cs" />
+    <Compile Include="Model\Lover\CommentCollection.cs" />
+    <Compile Include="Model\Lover\Lover.cs" />
+    <Compile Include="Model\Lover\LoverCollection.cs" />
+    <Compile Include="Model\Palette\Palette.cs" />
+    <Compile Include="Model\Palette\PaletteCollection.cs" />
+    <Compile Include="Model\Pattern\Pattern.cs" />
+    <Compile Include="Model\Pattern\PatternCollection.cs" />
+    <Compile Include="Model\Stats\Stats.cs" />
+    <Compile Include="Repository\AbstractRepository.cs" />
+    <Compile Include="Repository\ColorsRepository.cs" />
+    <Compile Include="Repository\LoversRepository.cs" />
+    <Compile Include="Repository\PalettesRepository.cs" />
+    <Compile Include="Repository\PatternsRepository.cs" />
+    <Compile Include="Repository\StatsRepository.cs" />
+    <Compile Include="SearchRequest\AbstractKeywordHueHexSearchRequest.cs" />
+    <Compile Include="SearchRequest\AbstractKeywordSearchRequest.cs" />
+    <Compile Include="SearchRequest\AbstractSearchRequest.cs" />
+    <Compile Include="SearchRequest\ColorsSearchRequest.cs" />
+    <Compile Include="SearchRequest\LoversSearchRequest.cs" />
+    <Compile Include="SearchRequest\PalettesSearchRequest.cs" />
+    <Compile Include="SearchRequest\PatternsSearchRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

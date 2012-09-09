@@ -1,0 +1,11 @@
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.suo
+*.user
+*.bak
+_ReSharper*
+/packages
+*.nuspec
+*.nupkg

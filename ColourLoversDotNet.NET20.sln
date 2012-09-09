@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColourLoversDotNet", "ColourLoversDotNet\ColourLoversDotNet.NET20.csproj", "{146B74D0-42D1-48A4-A334-8A1170E52E46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{146B74D0-42D1-48A4-A334-8A1170E52E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146B74D0-42D1-48A4-A334-8A1170E52E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146B74D0-42D1-48A4-A334-8A1170E52E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146B74D0-42D1-48A4-A334-8A1170E52E46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
